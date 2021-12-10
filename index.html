@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JavaScript Project</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+        <link href="css/reset.css" rel="stylesheet" type="text/css">
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <script src="js/script.js" defer></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="panel results hidden done">
+                <ul class="list"></ul>
+                <a href="./" id="back">Search For Another Drink</a>
+            </div>
+            <div class="panel loader hidden done">
+                <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M40 20C40 24.2763 38.6293 28.4401 36.0891 31.8802C33.549 35.3203 29.973 37.8557 25.8861 39.1142C21.7991 40.3728 17.4164 40.2882 13.381 38.873C9.34566 37.4577 5.87017 34.7863 3.46457 31.2508C1.05897 27.7152 -0.150067 23.5017 0.0148845 19.2285C0.179836 14.9554 1.71009 10.8476 4.38109 7.50802C7.05208 4.16844 10.7232 1.77289 14.8556 0.672938C18.9881 -0.427017 23.3643 -0.173465 27.342 1.39639L25.0671 7.16077C22.3218 6.07735 19.3016 5.90236 16.4496 6.66149C13.5976 7.42062 11.064 9.07389 9.22065 11.3787C7.37728 13.6835 6.32118 16.5185 6.20733 19.4676C6.09349 22.4167 6.92791 25.3246 8.58812 27.7647C10.2483 30.2047 12.6469 32.0484 15.4319 33.0251C18.2169 34.0019 21.2417 34.0602 24.0622 33.1916C26.8828 32.3231 29.3508 30.5733 31.1039 28.1991C32.857 25.8249 33.8029 22.9513 33.8029 20H40Z" fill="black"/>
+                </svg>
+            </div>
+            <div class="panel input">
+                <div class="title">
+                    <h1>Search for a cocktail name and we might find the recipes!</h1>
+                    <svg width="100" height="154" viewBox="0 0 100 154" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 23.2H90V43.2C90 68.0528 69.8528 88.2 45 88.2V88.2C20.1472 88.2 0 68.0528 0 43.2V23.2Z" fill="#C8D6E5" fill-opacity="0.5"/>
+                        <path d="M5 40.2H85V42.2C85 64.2914 67.0914 82.2 45 82.2V82.2C22.9086 82.2 5 64.2914 5 42.2V40.2Z" fill="#FF6B6B"/>
+                        <path d="M5 40.2H85V42.2C85 64.2914 67.0914 82.2 45 82.2V82.2C22.9086 82.2 5 64.2914 5 42.2V40.2Z" fill="#C8D6E5" fill-opacity="0.5"/>
+                        <path d="M95.8701 0.199997L99.4056 3.73553L62.9411 40.2H55.8701L95.8701 0.199997Z" fill="#C8D6E5" fill-opacity="0.5"/>
+                        <path d="M41 88C44.1216 88.2249 45.8771 88.2275 49 88V147H41V88Z" fill="#C8D6E5" fill-opacity="0.5"/>
+                        <path d="M15 154C15 150.134 18.134 147 22 147H68C71.866 147 75 150.134 75 154V154H15V154Z" fill="#C8D6E5" fill-opacity="0.5"/>
+                        <ellipse cx="45.5" cy="147.5" rx="22.5" ry="2.5" fill="#C8D6E5" fill-opacity="0.5"/>
+                    </svg>                        
+                </div>
+                <div class="search">
+                    <input type="search" id="drink" placeholder="Input cocktail name.." required>
+                    <button id="search">
+                        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.78415 17.8854C14.2024 17.8854 17.7841 14.3037 17.7841 9.88542C17.7841 5.46714 14.2024 1.88542 9.78415 1.88542C5.36587 1.88542 1.78415 5.46714 1.78415 9.88542C1.78415 14.3037 5.36587 17.8854 9.78415 17.8854Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M19.7841 19.8854L15.4341 15.5354" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                                
+                    </button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
